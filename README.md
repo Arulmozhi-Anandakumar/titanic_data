@@ -23,21 +23,28 @@ In this project, the following cleaning operations were performed:
   Filled missing Age values with the mean.
   Filled missing Embarked values with the most frequent value (mode).
   Dropped the Cabin column due to excessive null values.
+  
 2.Removing Duplicates
   Checked and removed any duplicate records.
+  
 3.Data Standardization
   Standardized text in the Sex column (e.g., "male" → "Male").
   Converted Survived and Pclass columns to categorical types.
+  
 4.Renaming Columns
   Renamed SibSp to Siblings_Spouses and Parch to Parents_Children for better clarity.
+  
 5.Saving Cleaned Data
   Exported the final cleaned dataset as cleaned_titanic.csv.
 
 **📂 Files in This Repository**
 
 train.csv – Original Titanic dataset
+
 clean_titanic.ipynb – Jupyter/Colab notebook for data cleaning
+
 cleaned_titanic.csv – Final cleaned dataset
+
 README.md – Project documentation
 
 **🚀 How to Run**
