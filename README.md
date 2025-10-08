@@ -1,73 +1,93 @@
-**Titanic Data Cleaning Project**
+**🧹 Titanic Data Cleaning & EDA Project**📌 
+**Project Overview**
 
-**📁 Project Overview**
+This project is part of my data science learning journey. I worked on the classic Titanic dataset to practice data cleaning and exploratory data analysis (EDA) using Python.
+The main goal was to clean the raw data, handle missing values, explore important features, and prepare it for future machine learning tasks.
 
-  This project focuses on cleaning the Titanic dataset, a classic beginner-friendly dataset widely used in data science. The goal is to prepare the raw data for analysis and modeling by handling missing values, removing duplicates, standardizing data, and improving data quality.
+**📊 Dataset Information**
 
-**📊 Dataset Description**
-
-The dataset contains information about passengers aboard the Titanic, including details like:
+The Titanic dataset contains details about passengers aboard the Titanic, including whether they survived the disaster.
+Key columns include:
 
 PassengerId – Unique ID for each passenger
+
 Survived – Survival status (0 = No, 1 = Yes)
+
 Pclass – Passenger class (1 = 1st, 2 = 2nd, 3 = 3rd)
+
 Name, Sex, Age – Personal details
-SibSp, Parch – Family relationships aboard
+
+SibSp, Parch – Family aboard
+
 Ticket, Fare, Cabin, Embarked – Travel details
 
-**🛠️ Data Cleaning Steps**
+**🛠️ Tools & Libraries Used**
 
-In this project, the following cleaning operations were performed:
+🐍 Python
 
-1.Handling Missing Values
-  Filled missing Age values with the mean.
-  Filled missing Embarked values with the most frequent value (mode).
-  Dropped the Cabin column due to excessive null values.
-  
-2.Removing Duplicates
-  Checked and removed any duplicate records.
-  
-3.Data Standardization
-  Standardized text in the Sex column (e.g., "male" → "Male").
-  Converted Survived and Pclass columns to categorical types.
-  
-4.Renaming Columns
-  Renamed SibSp to Siblings_Spouses and Parch to Parents_Children for better clarity.
-  
-5.Saving Cleaned Data
-  Exported the final cleaned dataset as cleaned_titanic.csv.
+📦 Pandas
 
-**📂 Files in This Repository**
+📊 Matplotlib
 
-train.csv – Original Titanic dataset
+🎨 Seaborn
 
-clean_titanic.ipynb – Jupyter/Colab notebook for data cleaning
+☁️ Google Colab
 
-cleaned_titanic.csv – Final cleaned dataset
+**🧹 Data Cleaning Steps**
 
-README.md – Project documentation
+Here’s what I did in the data cleaning phase:
 
-**🚀 How to Run**
+✅ Handled missing values in Age and Embarked
 
-Clone the repository:
-git clone https://github.com/your-username/titanic-cleaning.git
+🗑️ Dropped the Cabin column due to excessive null values
 
+🔁 Removed duplicate rows
 
-**Open the notebook in Jupyter or Google Colab.**
+🧼 Standardized categorical values (e.g., Sex)
 
-Run the cells to clean the dataset and generate cleaned_titanic.csv.
+🔄 Converted columns like Survived and Pclass to categorical
 
-**📚 Learning Outcomes**
+✏️ Renamed columns for better clarity
 
-Practical experience in handling missing values and cleaning messy data.
-Understanding of data types and categorical conversion.
-Improved skills in preparing datasets for machine learning tasks.
+💾 Saved the cleaned dataset as cleaned_titanic.csv
 
-**🧠 Future Work**
+**📊 Exploratory Data Analysis (EDA)**
 
-Perform exploratory data analysis (EDA).
-Build predictive models to classify passenger survival.
+To understand the data better, I explored:
 
-**🏷️ Credits**
+📉 Survival distribution overall
 
-Dataset Source: Kaggle – Titanic: Machine Learning from Disaster
+👩‍🦱 Survival rates by gender and passenger class
+
+📈 Age distribution of passengers
+
+🔥 Correlation between key numerical features (Age, Fare, Survived)
+
+**📁 Project Structure** 
+titanic_data/
+│
+├── train.csv                # Original dataset
+├── cleaned_titanic.csv      # Cleaned dataset
+├── titanic_cleaning.ipynb   # Data cleaning notebook
+├── titanic_eda.ipynb        # EDA notebook
+└── README.md                # Project documentation
+
+**🚀 Next Step**
+
+The next phase of this project will involve building a machine learning model to predict passenger survival based on the cleaned dataset.
+
+**🧠 What I Learned**
+
+How to clean and preprocess real-world data
+
+Handling missing values and duplicates
+
+Performing basic exploratory data analysis
+
+Creating visualizations to uncover patterns and insights
+
+**📌 Dataset Source**
+
+Kaggle – Titanic: Machine Learning from Disaster
+
+✨ This project helped me build a strong foundation in data cleaning and EDA, which are essential skills for every aspiring data scientist.
